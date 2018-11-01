@@ -49,10 +49,10 @@ public class FlowSort {
 
     public static class FlowSortReducer extends Reducer<FlowBean, NullWritable, Text, FlowBean> {
         private Text outKey = new Text();
-        // 这里针对一个reduceTask或者说针对一个partition 但是一个partition可能有多个hashcode不一样的key
+        // 这里针对一个reduceTask
         @Override
         protected void reduce(FlowBean key, Iterable<NullWritable> values, Context context) throws IOException, InterruptedException {
-            // 这里只针对同一个key
+            // 这里只针对同一个 partitioner
             String phoneNumber = key.getPhoneNumber();
             outKey.set(phoneNumber);
             context.write(outKey,key);
