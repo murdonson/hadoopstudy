@@ -1,0 +1,472 @@
+2018-10-27 10:02:03 INFO warnOnceIfDeprecated(Configuration.java:1049) - session.id is deprecated. Instead, use dfs.metrics.session-id
+2018-10-27 10:02:03 INFO init(JvmMetrics.java:76) - Initializing JVM Metrics with processName=JobTracker, sessionId=
+2018-10-27 10:02:03 WARN copyAndConfigureFiles(JobSubmitter.java:153) - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2018-10-27 10:02:03 WARN copyAndConfigureFiles(JobSubmitter.java:261) - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2018-10-27 10:02:04 INFO listStatus(FileInputFormat.java:281) - Total input paths to process : 1
+2018-10-27 10:02:04 INFO submitJobInternal(JobSubmitter.java:494) - number of splits:1
+2018-10-27 10:02:04 INFO printTokens(JobSubmitter.java:583) - Submitting tokens for job: job_local594343664_0001
+2018-10-27 10:02:04 INFO submit(Job.java:1300) - The url to track the job: http://localhost:8080/
+2018-10-27 10:02:04 INFO monitorAndPrintJob(Job.java:1345) - Running job: job_local594343664_0001
+2018-10-27 10:02:04 INFO createOutputCommitter(LocalJobRunner.java:471) - OutputCommitter set in config null
+2018-10-27 10:02:04 INFO createOutputCommitter(LocalJobRunner.java:489) - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2018-10-27 10:02:04 INFO runTasks(LocalJobRunner.java:448) - Waiting for map tasks
+2018-10-27 10:02:04 INFO run(LocalJobRunner.java:224) - Starting task: attempt_local594343664_0001_m_000000_0
+2018-10-27 10:02:04 INFO isAvailable(ProcfsBasedProcessTree.java:181) - ProcfsBasedProcessTree currently is supported only on Linux.
+2018-10-27 10:02:04 INFO initialize(Task.java:587) -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@4b660687
+2018-10-27 10:02:04 INFO runNewMapper(MapTask.java:753) - Processing split: file:/E:/IdeaProjects/hadoopstudy/data/invertedIndex2/results/part-r-00000:0+94
+2018-10-27 10:02:04 INFO setEquator(MapTask.java:1202) - (EQUATOR) 0 kvi 26214396(104857584)
+2018-10-27 10:02:04 INFO init(MapTask.java:995) - mapreduce.task.io.sort.mb: 100
+2018-10-27 10:02:04 INFO init(MapTask.java:996) - soft limit at 83886080
+2018-10-27 10:02:04 INFO init(MapTask.java:997) - bufstart = 0; bufvoid = 104857600
+2018-10-27 10:02:04 INFO init(MapTask.java:998) - kvstart = 26214396; length = 6553600
+2018-10-27 10:02:04 INFO createSortingCollector(MapTask.java:402) - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-10-27 10:02:04 INFO statusUpdate(LocalJobRunner.java:591) - 
+2018-10-27 10:02:04 INFO flush(MapTask.java:1457) - Starting flush of map output
+2018-10-27 10:02:04 INFO flush(MapTask.java:1475) - Spilling map output
+2018-10-27 10:02:04 INFO flush(MapTask.java:1476) - bufstart = 0; bufend = 101; bufvoid = 104857600
+2018-10-27 10:02:04 INFO flush(MapTask.java:1478) - kvstart = 26214396(104857584); kvend = 26214372(104857488); length = 25/6553600
+2018-10-27 10:02:04 INFO sortAndSpill(MapTask.java:1660) - Finished spill 0
+2018-10-27 10:02:04 INFO done(Task.java:1001) - Task:attempt_local594343664_0001_m_000000_0 is done. And is in the process of committing
+2018-10-27 10:02:04 INFO statusUpdate(LocalJobRunner.java:591) - map
+2018-10-27 10:02:04 INFO sendDone(Task.java:1121) - Task 'attempt_local594343664_0001_m_000000_0' done.
+2018-10-27 10:02:04 INFO run(LocalJobRunner.java:249) - Finishing task: attempt_local594343664_0001_m_000000_0
+2018-10-27 10:02:04 INFO runTasks(LocalJobRunner.java:456) - map task executor complete.
+2018-10-27 10:02:04 INFO runTasks(LocalJobRunner.java:448) - Waiting for reduce tasks
+2018-10-27 10:02:04 INFO run(LocalJobRunner.java:302) - Starting task: attempt_local594343664_0001_r_000000_0
+2018-10-27 10:02:04 INFO isAvailable(ProcfsBasedProcessTree.java:181) - ProcfsBasedProcessTree currently is supported only on Linux.
+2018-10-27 10:02:04 INFO initialize(Task.java:587) -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@43bbd4b8
+2018-10-27 10:02:04 INFO run(ReduceTask.java:362) - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@2f833439
+2018-10-27 10:02:04 INFO <init>(MergeManagerImpl.java:196) - MergerManager: memoryLimit=1320838784, maxSingleShuffleLimit=330209696, mergeThreshold=871753664, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2018-10-27 10:02:04 INFO run(EventFetcher.java:61) - attempt_local594343664_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2018-10-27 10:02:04 INFO copyMapOutput(LocalFetcher.java:141) - localfetcher#1 about to shuffle output of map attempt_local594343664_0001_m_000000_0 decomp: 117 len: 121 to MEMORY
+2018-10-27 10:02:04 INFO shuffle(InMemoryMapOutput.java:100) - Read 117 bytes from map-output for attempt_local594343664_0001_m_000000_0
+2018-10-27 10:02:05 INFO closeInMemoryFile(MergeManagerImpl.java:314) - closeInMemoryFile -> map-output of size: 117, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->117
+2018-10-27 10:02:05 INFO run(EventFetcher.java:76) - EventFetcher is interrupted.. Returning
+2018-10-27 10:02:05 INFO statusUpdate(LocalJobRunner.java:591) - 1 / 1 copied.
+2018-10-27 10:02:05 INFO finalMerge(MergeManagerImpl.java:674) - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2018-10-27 10:02:05 INFO merge(Merger.java:597) - Merging 1 sorted segments
+2018-10-27 10:02:05 INFO merge(Merger.java:696) - Down to the last merge-pass, with 1 segments left of total size: 112 bytes
+2018-10-27 10:02:05 INFO finalMerge(MergeManagerImpl.java:751) - Merged 1 segments, 117 bytes to disk to satisfy reduce memory limit
+2018-10-27 10:02:05 INFO finalMerge(MergeManagerImpl.java:781) - Merging 1 files, 121 bytes from disk
+2018-10-27 10:02:05 INFO finalMerge(MergeManagerImpl.java:796) - Merging 0 segments, 0 bytes from memory into reduce
+2018-10-27 10:02:05 INFO merge(Merger.java:597) - Merging 1 sorted segments
+2018-10-27 10:02:05 INFO merge(Merger.java:696) - Down to the last merge-pass, with 1 segments left of total size: 112 bytes
+2018-10-27 10:02:05 INFO statusUpdate(LocalJobRunner.java:591) - 1 / 1 copied.
+2018-10-27 10:02:05 INFO warnOnceIfDeprecated(Configuration.java:1049) - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2018-10-27 10:02:05 INFO done(Task.java:1001) - Task:attempt_local594343664_0001_r_000000_0 is done. And is in the process of committing
+2018-10-27 10:02:05 INFO statusUpdate(LocalJobRunner.java:591) - 1 / 1 copied.
+2018-10-27 10:02:05 INFO commit(Task.java:1162) - Task attempt_local594343664_0001_r_000000_0 is allowed to commit now
+2018-10-27 10:02:05 INFO commitTask(FileOutputCommitter.java:439) - Saved output of task 'attempt_local594343664_0001_r_000000_0' to file:/E:/IdeaProjects/hadoopstudy/data/invertedIndex2/results2/_temporary/0/task_local594343664_0001_r_000000
+2018-10-27 10:02:05 INFO statusUpdate(LocalJobRunner.java:591) - reduce > reduce
+2018-10-27 10:02:05 INFO sendDone(Task.java:1121) - Task 'attempt_local594343664_0001_r_000000_0' done.
+2018-10-27 10:02:05 INFO run(LocalJobRunner.java:325) - Finishing task: attempt_local594343664_0001_r_000000_0
+2018-10-27 10:02:05 INFO runTasks(LocalJobRunner.java:456) - reduce task executor complete.
+2018-10-27 10:02:05 INFO monitorAndPrintJob(Job.java:1366) - Job job_local594343664_0001 running in uber mode : false
+2018-10-27 10:02:05 INFO monitorAndPrintJob(Job.java:1373) -  map 100% reduce 100%
+2018-10-27 10:02:05 INFO monitorAndPrintJob(Job.java:1384) - Job job_local594343664_0001 completed successfully
+2018-10-27 10:02:05 INFO monitorAndPrintJob(Job.java:1391) - Counters: 33
+	File System Counters
+		FILE: Number of bytes read=1266
+		FILE: Number of bytes written=498274
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=7
+		Map output records=7
+		Map output bytes=101
+		Map output materialized bytes=121
+		Input split bytes=328
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=4
+		Reduce shuffle bytes=121
+		Reduce input records=7
+		Reduce output records=4
+		Spilled Records=14
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=4
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0
+		Total committed heap usage (bytes)=468713472
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=103
+2018-10-27 10:03:09 INFO warnOnceIfDeprecated(Configuration.java:1049) - session.id is deprecated. Instead, use dfs.metrics.session-id
+2018-10-27 10:03:09 INFO init(JvmMetrics.java:76) - Initializing JVM Metrics with processName=JobTracker, sessionId=
+2018-10-27 10:03:09 WARN copyAndConfigureFiles(JobSubmitter.java:153) - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2018-10-27 10:03:09 WARN copyAndConfigureFiles(JobSubmitter.java:261) - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2018-10-27 10:03:10 INFO listStatus(FileInputFormat.java:281) - Total input paths to process : 1
+2018-10-27 10:03:10 INFO submitJobInternal(JobSubmitter.java:494) - number of splits:1
+2018-10-27 10:03:10 INFO printTokens(JobSubmitter.java:583) - Submitting tokens for job: job_local2129820547_0001
+2018-10-27 10:03:10 INFO submit(Job.java:1300) - The url to track the job: http://localhost:8080/
+2018-10-27 10:03:10 INFO monitorAndPrintJob(Job.java:1345) - Running job: job_local2129820547_0001
+2018-10-27 10:03:10 INFO createOutputCommitter(LocalJobRunner.java:471) - OutputCommitter set in config null
+2018-10-27 10:03:10 INFO createOutputCommitter(LocalJobRunner.java:489) - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2018-10-27 10:03:10 INFO runTasks(LocalJobRunner.java:448) - Waiting for map tasks
+2018-10-27 10:03:10 INFO run(LocalJobRunner.java:224) - Starting task: attempt_local2129820547_0001_m_000000_0
+2018-10-27 10:03:10 INFO isAvailable(ProcfsBasedProcessTree.java:181) - ProcfsBasedProcessTree currently is supported only on Linux.
+2018-10-27 10:03:10 INFO initialize(Task.java:587) -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@15ca7cd9
+2018-10-27 10:03:10 INFO runNewMapper(MapTask.java:753) - Processing split: file:/E:/IdeaProjects/hadoopstudy/data/invertedIndex2/results/part-r-00000:0+94
+2018-10-27 10:03:10 INFO setEquator(MapTask.java:1202) - (EQUATOR) 0 kvi 26214396(104857584)
+2018-10-27 10:03:10 INFO init(MapTask.java:995) - mapreduce.task.io.sort.mb: 100
+2018-10-27 10:03:10 INFO init(MapTask.java:996) - soft limit at 83886080
+2018-10-27 10:03:10 INFO init(MapTask.java:997) - bufstart = 0; bufvoid = 104857600
+2018-10-27 10:03:10 INFO init(MapTask.java:998) - kvstart = 26214396; length = 6553600
+2018-10-27 10:03:10 INFO createSortingCollector(MapTask.java:402) - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-10-27 10:03:10 INFO statusUpdate(LocalJobRunner.java:591) - 
+2018-10-27 10:03:10 INFO flush(MapTask.java:1457) - Starting flush of map output
+2018-10-27 10:03:10 INFO flush(MapTask.java:1475) - Spilling map output
+2018-10-27 10:03:10 INFO flush(MapTask.java:1476) - bufstart = 0; bufend = 87; bufvoid = 104857600
+2018-10-27 10:03:10 INFO flush(MapTask.java:1478) - kvstart = 26214396(104857584); kvend = 26214372(104857488); length = 25/6553600
+2018-10-27 10:03:10 INFO sortAndSpill(MapTask.java:1660) - Finished spill 0
+2018-10-27 10:03:10 INFO done(Task.java:1001) - Task:attempt_local2129820547_0001_m_000000_0 is done. And is in the process of committing
+2018-10-27 10:03:10 INFO statusUpdate(LocalJobRunner.java:591) - map
+2018-10-27 10:03:10 INFO sendDone(Task.java:1121) - Task 'attempt_local2129820547_0001_m_000000_0' done.
+2018-10-27 10:03:10 INFO run(LocalJobRunner.java:249) - Finishing task: attempt_local2129820547_0001_m_000000_0
+2018-10-27 10:03:10 INFO runTasks(LocalJobRunner.java:456) - map task executor complete.
+2018-10-27 10:03:10 INFO runTasks(LocalJobRunner.java:448) - Waiting for reduce tasks
+2018-10-27 10:03:10 INFO run(LocalJobRunner.java:302) - Starting task: attempt_local2129820547_0001_r_000000_0
+2018-10-27 10:03:10 INFO isAvailable(ProcfsBasedProcessTree.java:181) - ProcfsBasedProcessTree currently is supported only on Linux.
+2018-10-27 10:03:10 INFO initialize(Task.java:587) -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@3860ef9a
+2018-10-27 10:03:10 INFO run(ReduceTask.java:362) - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@2bc4f877
+2018-10-27 10:03:10 INFO <init>(MergeManagerImpl.java:196) - MergerManager: memoryLimit=1320838784, maxSingleShuffleLimit=330209696, mergeThreshold=871753664, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2018-10-27 10:03:10 INFO run(EventFetcher.java:61) - attempt_local2129820547_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2018-10-27 10:03:10 INFO copyMapOutput(LocalFetcher.java:141) - localfetcher#1 about to shuffle output of map attempt_local2129820547_0001_m_000000_0 decomp: 103 len: 107 to MEMORY
+2018-10-27 10:03:10 INFO shuffle(InMemoryMapOutput.java:100) - Read 103 bytes from map-output for attempt_local2129820547_0001_m_000000_0
+2018-10-27 10:03:10 INFO closeInMemoryFile(MergeManagerImpl.java:314) - closeInMemoryFile -> map-output of size: 103, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->103
+2018-10-27 10:03:10 INFO run(EventFetcher.java:76) - EventFetcher is interrupted.. Returning
+2018-10-27 10:03:10 INFO statusUpdate(LocalJobRunner.java:591) - 1 / 1 copied.
+2018-10-27 10:03:10 INFO finalMerge(MergeManagerImpl.java:674) - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2018-10-27 10:03:10 INFO merge(Merger.java:597) - Merging 1 sorted segments
+2018-10-27 10:03:10 INFO merge(Merger.java:696) - Down to the last merge-pass, with 1 segments left of total size: 98 bytes
+2018-10-27 10:03:10 INFO finalMerge(MergeManagerImpl.java:751) - Merged 1 segments, 103 bytes to disk to satisfy reduce memory limit
+2018-10-27 10:03:10 INFO finalMerge(MergeManagerImpl.java:781) - Merging 1 files, 107 bytes from disk
+2018-10-27 10:03:10 INFO finalMerge(MergeManagerImpl.java:796) - Merging 0 segments, 0 bytes from memory into reduce
+2018-10-27 10:03:10 INFO merge(Merger.java:597) - Merging 1 sorted segments
+2018-10-27 10:03:10 INFO merge(Merger.java:696) - Down to the last merge-pass, with 1 segments left of total size: 98 bytes
+2018-10-27 10:03:10 INFO statusUpdate(LocalJobRunner.java:591) - 1 / 1 copied.
+2018-10-27 10:03:10 INFO warnOnceIfDeprecated(Configuration.java:1049) - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2018-10-27 10:03:10 INFO done(Task.java:1001) - Task:attempt_local2129820547_0001_r_000000_0 is done. And is in the process of committing
+2018-10-27 10:03:10 INFO statusUpdate(LocalJobRunner.java:591) - 1 / 1 copied.
+2018-10-27 10:03:10 INFO commit(Task.java:1162) - Task attempt_local2129820547_0001_r_000000_0 is allowed to commit now
+2018-10-27 10:03:10 INFO commitTask(FileOutputCommitter.java:439) - Saved output of task 'attempt_local2129820547_0001_r_000000_0' to file:/E:/IdeaProjects/hadoopstudy/data/invertedIndex2/results2/_temporary/0/task_local2129820547_0001_r_000000
+2018-10-27 10:03:10 INFO statusUpdate(LocalJobRunner.java:591) - reduce > reduce
+2018-10-27 10:03:10 INFO sendDone(Task.java:1121) - Task 'attempt_local2129820547_0001_r_000000_0' done.
+2018-10-27 10:03:10 INFO run(LocalJobRunner.java:325) - Finishing task: attempt_local2129820547_0001_r_000000_0
+2018-10-27 10:03:10 INFO runTasks(LocalJobRunner.java:456) - reduce task executor complete.
+2018-10-27 10:03:11 INFO monitorAndPrintJob(Job.java:1366) - Job job_local2129820547_0001 running in uber mode : false
+2018-10-27 10:03:11 INFO monitorAndPrintJob(Job.java:1373) -  map 100% reduce 100%
+2018-10-27 10:03:11 INFO monitorAndPrintJob(Job.java:1384) - Job job_local2129820547_0001 completed successfully
+2018-10-27 10:03:11 INFO monitorAndPrintJob(Job.java:1391) - Counters: 33
+	File System Counters
+		FILE: Number of bytes read=1238
+		FILE: Number of bytes written=500918
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=7
+		Map output records=7
+		Map output bytes=87
+		Map output materialized bytes=107
+		Input split bytes=328
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=4
+		Reduce shuffle bytes=107
+		Reduce input records=7
+		Reduce output records=4
+		Spilled Records=14
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=10
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0
+		Total committed heap usage (bytes)=468713472
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=89
+2018-10-27 10:17:02 INFO warnOnceIfDeprecated(Configuration.java:1049) - session.id is deprecated. Instead, use dfs.metrics.session-id
+2018-10-27 10:17:02 INFO init(JvmMetrics.java:76) - Initializing JVM Metrics with processName=JobTracker, sessionId=
+2018-10-27 10:17:02 WARN copyAndConfigureFiles(JobSubmitter.java:153) - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2018-10-27 10:17:02 WARN copyAndConfigureFiles(JobSubmitter.java:261) - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2018-10-27 10:17:02 INFO listStatus(FileInputFormat.java:281) - Total input paths to process : 4
+2018-10-27 10:17:02 INFO submitJobInternal(JobSubmitter.java:545) - Cleaning up the staging area file:/tmp/hadoop-jzy/mapred/staging/jzy1078812682/.staging/job_local1078812682_0001
+2018-10-27 10:19:24 INFO warnOnceIfDeprecated(Configuration.java:1049) - session.id is deprecated. Instead, use dfs.metrics.session-id
+2018-10-27 10:19:24 INFO init(JvmMetrics.java:76) - Initializing JVM Metrics with processName=JobTracker, sessionId=
+2018-10-27 10:19:24 WARN copyAndConfigureFiles(JobSubmitter.java:153) - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2018-10-27 10:19:24 WARN copyAndConfigureFiles(JobSubmitter.java:261) - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2018-10-27 10:19:24 INFO listStatus(FileInputFormat.java:281) - Total input paths to process : 3
+2018-10-27 10:19:24 INFO submitJobInternal(JobSubmitter.java:494) - number of splits:3
+2018-10-27 10:19:24 INFO printTokens(JobSubmitter.java:583) - Submitting tokens for job: job_local7453154_0001
+2018-10-27 10:19:25 INFO submit(Job.java:1300) - The url to track the job: http://localhost:8080/
+2018-10-27 10:19:25 INFO monitorAndPrintJob(Job.java:1345) - Running job: job_local7453154_0001
+2018-10-27 10:19:25 INFO createOutputCommitter(LocalJobRunner.java:471) - OutputCommitter set in config null
+2018-10-27 10:19:25 INFO createOutputCommitter(LocalJobRunner.java:489) - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2018-10-27 10:19:25 INFO runTasks(LocalJobRunner.java:448) - Waiting for map tasks
+2018-10-27 10:19:25 INFO run(LocalJobRunner.java:224) - Starting task: attempt_local7453154_0001_m_000000_0
+2018-10-27 10:19:25 INFO isAvailable(ProcfsBasedProcessTree.java:181) - ProcfsBasedProcessTree currently is supported only on Linux.
+2018-10-27 10:19:25 INFO initialize(Task.java:587) -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@12003e15
+2018-10-27 10:19:25 INFO runNewMapper(MapTask.java:753) - Processing split: file:/E:/IdeaProjects/hadoopstudy/data/invertedIndex1/c.txt:0+138
+2018-10-27 10:19:25 INFO setEquator(MapTask.java:1202) - (EQUATOR) 0 kvi 26214396(104857584)
+2018-10-27 10:19:25 INFO init(MapTask.java:995) - mapreduce.task.io.sort.mb: 100
+2018-10-27 10:19:25 INFO init(MapTask.java:996) - soft limit at 83886080
+2018-10-27 10:19:25 INFO init(MapTask.java:997) - bufstart = 0; bufvoid = 104857600
+2018-10-27 10:19:25 INFO init(MapTask.java:998) - kvstart = 26214396; length = 6553600
+2018-10-27 10:19:25 INFO createSortingCollector(MapTask.java:402) - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-10-27 10:19:25 INFO statusUpdate(LocalJobRunner.java:591) - 
+2018-10-27 10:19:25 INFO flush(MapTask.java:1457) - Starting flush of map output
+2018-10-27 10:19:25 INFO flush(MapTask.java:1475) - Spilling map output
+2018-10-27 10:19:25 INFO flush(MapTask.java:1476) - bufstart = 0; bufend = 535; bufvoid = 104857600
+2018-10-27 10:19:25 INFO flush(MapTask.java:1478) - kvstart = 26214396(104857584); kvend = 26214224(104856896); length = 173/6553600
+2018-10-27 10:19:25 INFO sortAndSpill(MapTask.java:1660) - Finished spill 0
+2018-10-27 10:19:25 INFO done(Task.java:1001) - Task:attempt_local7453154_0001_m_000000_0 is done. And is in the process of committing
+2018-10-27 10:19:25 INFO statusUpdate(LocalJobRunner.java:591) - map
+2018-10-27 10:19:25 INFO sendDone(Task.java:1121) - Task 'attempt_local7453154_0001_m_000000_0' done.
+2018-10-27 10:19:25 INFO run(LocalJobRunner.java:249) - Finishing task: attempt_local7453154_0001_m_000000_0
+2018-10-27 10:19:25 INFO run(LocalJobRunner.java:224) - Starting task: attempt_local7453154_0001_m_000001_0
+2018-10-27 10:19:25 INFO isAvailable(ProcfsBasedProcessTree.java:181) - ProcfsBasedProcessTree currently is supported only on Linux.
+2018-10-27 10:19:25 INFO initialize(Task.java:587) -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@13875d8f
+2018-10-27 10:19:25 INFO runNewMapper(MapTask.java:753) - Processing split: file:/E:/IdeaProjects/hadoopstudy/data/invertedIndex1/b.txt:0+35
+2018-10-27 10:19:25 INFO setEquator(MapTask.java:1202) - (EQUATOR) 0 kvi 26214396(104857584)
+2018-10-27 10:19:25 INFO init(MapTask.java:995) - mapreduce.task.io.sort.mb: 100
+2018-10-27 10:19:25 INFO init(MapTask.java:996) - soft limit at 83886080
+2018-10-27 10:19:25 INFO init(MapTask.java:997) - bufstart = 0; bufvoid = 104857600
+2018-10-27 10:19:25 INFO init(MapTask.java:998) - kvstart = 26214396; length = 6553600
+2018-10-27 10:19:25 INFO createSortingCollector(MapTask.java:402) - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-10-27 10:19:25 INFO statusUpdate(LocalJobRunner.java:591) - 
+2018-10-27 10:19:25 INFO flush(MapTask.java:1457) - Starting flush of map output
+2018-10-27 10:19:25 INFO flush(MapTask.java:1475) - Spilling map output
+2018-10-27 10:19:25 INFO flush(MapTask.java:1476) - bufstart = 0; bufend = 135; bufvoid = 104857600
+2018-10-27 10:19:25 INFO flush(MapTask.java:1478) - kvstart = 26214396(104857584); kvend = 26214356(104857424); length = 41/6553600
+2018-10-27 10:19:25 INFO sortAndSpill(MapTask.java:1660) - Finished spill 0
+2018-10-27 10:19:25 INFO done(Task.java:1001) - Task:attempt_local7453154_0001_m_000001_0 is done. And is in the process of committing
+2018-10-27 10:19:25 INFO statusUpdate(LocalJobRunner.java:591) - map
+2018-10-27 10:19:25 INFO sendDone(Task.java:1121) - Task 'attempt_local7453154_0001_m_000001_0' done.
+2018-10-27 10:19:25 INFO run(LocalJobRunner.java:249) - Finishing task: attempt_local7453154_0001_m_000001_0
+2018-10-27 10:19:25 INFO run(LocalJobRunner.java:224) - Starting task: attempt_local7453154_0001_m_000002_0
+2018-10-27 10:19:25 INFO isAvailable(ProcfsBasedProcessTree.java:181) - ProcfsBasedProcessTree currently is supported only on Linux.
+2018-10-27 10:19:25 INFO initialize(Task.java:587) -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@f185342
+2018-10-27 10:19:25 INFO runNewMapper(MapTask.java:753) - Processing split: file:/E:/IdeaProjects/hadoopstudy/data/invertedIndex2/a.txt:0+31
+2018-10-27 10:19:25 INFO setEquator(MapTask.java:1202) - (EQUATOR) 0 kvi 26214396(104857584)
+2018-10-27 10:19:25 INFO init(MapTask.java:995) - mapreduce.task.io.sort.mb: 100
+2018-10-27 10:19:25 INFO init(MapTask.java:996) - soft limit at 83886080
+2018-10-27 10:19:25 INFO init(MapTask.java:997) - bufstart = 0; bufvoid = 104857600
+2018-10-27 10:19:25 INFO init(MapTask.java:998) - kvstart = 26214396; length = 6553600
+2018-10-27 10:19:25 INFO createSortingCollector(MapTask.java:402) - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-10-27 10:19:25 INFO statusUpdate(LocalJobRunner.java:591) - 
+2018-10-27 10:19:25 INFO flush(MapTask.java:1457) - Starting flush of map output
+2018-10-27 10:19:25 INFO flush(MapTask.java:1475) - Spilling map output
+2018-10-27 10:19:25 INFO flush(MapTask.java:1476) - bufstart = 0; bufend = 95; bufvoid = 104857600
+2018-10-27 10:19:25 INFO flush(MapTask.java:1478) - kvstart = 26214396(104857584); kvend = 26214372(104857488); length = 25/6553600
+2018-10-27 10:19:25 INFO sortAndSpill(MapTask.java:1660) - Finished spill 0
+2018-10-27 10:19:25 INFO done(Task.java:1001) - Task:attempt_local7453154_0001_m_000002_0 is done. And is in the process of committing
+2018-10-27 10:19:25 INFO statusUpdate(LocalJobRunner.java:591) - map
+2018-10-27 10:19:25 INFO sendDone(Task.java:1121) - Task 'attempt_local7453154_0001_m_000002_0' done.
+2018-10-27 10:19:25 INFO run(LocalJobRunner.java:249) - Finishing task: attempt_local7453154_0001_m_000002_0
+2018-10-27 10:19:25 INFO runTasks(LocalJobRunner.java:456) - map task executor complete.
+2018-10-27 10:19:25 INFO runTasks(LocalJobRunner.java:448) - Waiting for reduce tasks
+2018-10-27 10:19:25 INFO run(LocalJobRunner.java:302) - Starting task: attempt_local7453154_0001_r_000000_0
+2018-10-27 10:19:25 INFO isAvailable(ProcfsBasedProcessTree.java:181) - ProcfsBasedProcessTree currently is supported only on Linux.
+2018-10-27 10:19:25 INFO initialize(Task.java:587) -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@5ed3a82c
+2018-10-27 10:19:25 INFO run(ReduceTask.java:362) - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@5473df79
+2018-10-27 10:19:25 INFO <init>(MergeManagerImpl.java:196) - MergerManager: memoryLimit=1320838784, maxSingleShuffleLimit=330209696, mergeThreshold=871753664, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2018-10-27 10:19:25 INFO run(EventFetcher.java:61) - attempt_local7453154_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2018-10-27 10:19:25 INFO copyMapOutput(LocalFetcher.java:141) - localfetcher#1 about to shuffle output of map attempt_local7453154_0001_m_000001_0 decomp: 159 len: 163 to MEMORY
+2018-10-27 10:19:25 INFO shuffle(InMemoryMapOutput.java:100) - Read 159 bytes from map-output for attempt_local7453154_0001_m_000001_0
+2018-10-27 10:19:25 INFO closeInMemoryFile(MergeManagerImpl.java:314) - closeInMemoryFile -> map-output of size: 159, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->159
+2018-10-27 10:19:25 INFO copyMapOutput(LocalFetcher.java:141) - localfetcher#1 about to shuffle output of map attempt_local7453154_0001_m_000002_0 decomp: 111 len: 115 to MEMORY
+2018-10-27 10:19:25 INFO shuffle(InMemoryMapOutput.java:100) - Read 111 bytes from map-output for attempt_local7453154_0001_m_000002_0
+2018-10-27 10:19:25 INFO closeInMemoryFile(MergeManagerImpl.java:314) - closeInMemoryFile -> map-output of size: 111, inMemoryMapOutputs.size() -> 2, commitMemory -> 159, usedMemory ->270
+2018-10-27 10:19:25 INFO copyMapOutput(LocalFetcher.java:141) - localfetcher#1 about to shuffle output of map attempt_local7453154_0001_m_000000_0 decomp: 625 len: 629 to MEMORY
+2018-10-27 10:19:25 INFO shuffle(InMemoryMapOutput.java:100) - Read 625 bytes from map-output for attempt_local7453154_0001_m_000000_0
+2018-10-27 10:19:25 INFO closeInMemoryFile(MergeManagerImpl.java:314) - closeInMemoryFile -> map-output of size: 625, inMemoryMapOutputs.size() -> 3, commitMemory -> 270, usedMemory ->895
+2018-10-27 10:19:25 INFO run(EventFetcher.java:76) - EventFetcher is interrupted.. Returning
+2018-10-27 10:19:25 INFO statusUpdate(LocalJobRunner.java:591) - 3 / 3 copied.
+2018-10-27 10:19:25 INFO finalMerge(MergeManagerImpl.java:674) - finalMerge called with 3 in-memory map-outputs and 0 on-disk map-outputs
+2018-10-27 10:19:25 INFO merge(Merger.java:597) - Merging 3 sorted segments
+2018-10-27 10:19:25 INFO merge(Merger.java:696) - Down to the last merge-pass, with 3 segments left of total size: 859 bytes
+2018-10-27 10:19:25 INFO finalMerge(MergeManagerImpl.java:751) - Merged 3 segments, 895 bytes to disk to satisfy reduce memory limit
+2018-10-27 10:19:25 INFO finalMerge(MergeManagerImpl.java:781) - Merging 1 files, 895 bytes from disk
+2018-10-27 10:19:25 INFO finalMerge(MergeManagerImpl.java:796) - Merging 0 segments, 0 bytes from memory into reduce
+2018-10-27 10:19:25 INFO merge(Merger.java:597) - Merging 1 sorted segments
+2018-10-27 10:19:25 INFO merge(Merger.java:696) - Down to the last merge-pass, with 1 segments left of total size: 879 bytes
+2018-10-27 10:19:25 INFO statusUpdate(LocalJobRunner.java:591) - 3 / 3 copied.
+2018-10-27 10:19:25 INFO warnOnceIfDeprecated(Configuration.java:1049) - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2018-10-27 10:19:25 INFO done(Task.java:1001) - Task:attempt_local7453154_0001_r_000000_0 is done. And is in the process of committing
+2018-10-27 10:19:25 INFO statusUpdate(LocalJobRunner.java:591) - 3 / 3 copied.
+2018-10-27 10:19:25 INFO commit(Task.java:1162) - Task attempt_local7453154_0001_r_000000_0 is allowed to commit now
+2018-10-27 10:19:25 INFO commitTask(FileOutputCommitter.java:439) - Saved output of task 'attempt_local7453154_0001_r_000000_0' to file:/E:/IdeaProjects/hadoopstudy/data/invertedIndexresults1/_temporary/0/task_local7453154_0001_r_000000
+2018-10-27 10:19:25 INFO statusUpdate(LocalJobRunner.java:591) - reduce > reduce
+2018-10-27 10:19:25 INFO sendDone(Task.java:1121) - Task 'attempt_local7453154_0001_r_000000_0' done.
+2018-10-27 10:19:25 INFO run(LocalJobRunner.java:325) - Finishing task: attempt_local7453154_0001_r_000000_0
+2018-10-27 10:19:25 INFO runTasks(LocalJobRunner.java:456) - reduce task executor complete.
+2018-10-27 10:19:26 INFO monitorAndPrintJob(Job.java:1366) - Job job_local7453154_0001 running in uber mode : false
+2018-10-27 10:19:26 INFO monitorAndPrintJob(Job.java:1373) -  map 100% reduce 100%
+2018-10-27 10:19:26 INFO monitorAndPrintJob(Job.java:1384) - Job job_local7453154_0001 completed successfully
+2018-10-27 10:19:26 INFO monitorAndPrintJob(Job.java:1391) - Counters: 33
+	File System Counters
+		FILE: Number of bytes read=10380
+		FILE: Number of bytes written=993394
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=3
+		Map output records=62
+		Map output bytes=765
+		Map output materialized bytes=907
+		Input split bytes=924
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=11
+		Reduce shuffle bytes=907
+		Reduce input records=62
+		Reduce output records=11
+		Spilled Records=124
+		Shuffled Maps =3
+		Failed Shuffles=0
+		Merged Map outputs=3
+		GC time elapsed (ms)=13
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0
+		Total committed heap usage (bytes)=1464336384
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=156
+2018-10-27 10:20:57 INFO warnOnceIfDeprecated(Configuration.java:1049) - session.id is deprecated. Instead, use dfs.metrics.session-id
+2018-10-27 10:20:57 INFO init(JvmMetrics.java:76) - Initializing JVM Metrics with processName=JobTracker, sessionId=
+2018-10-27 10:20:57 WARN copyAndConfigureFiles(JobSubmitter.java:153) - Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2018-10-27 10:20:57 WARN copyAndConfigureFiles(JobSubmitter.java:261) - No job jar file set.  User classes may not be found. See Job or Job#setJar(String).
+2018-10-27 10:20:57 INFO listStatus(FileInputFormat.java:281) - Total input paths to process : 1
+2018-10-27 10:20:57 INFO submitJobInternal(JobSubmitter.java:494) - number of splits:1
+2018-10-27 10:20:57 INFO printTokens(JobSubmitter.java:583) - Submitting tokens for job: job_local2043574124_0001
+2018-10-27 10:20:57 INFO submit(Job.java:1300) - The url to track the job: http://localhost:8080/
+2018-10-27 10:20:57 INFO monitorAndPrintJob(Job.java:1345) - Running job: job_local2043574124_0001
+2018-10-27 10:20:57 INFO createOutputCommitter(LocalJobRunner.java:471) - OutputCommitter set in config null
+2018-10-27 10:20:57 INFO createOutputCommitter(LocalJobRunner.java:489) - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2018-10-27 10:20:57 INFO runTasks(LocalJobRunner.java:448) - Waiting for map tasks
+2018-10-27 10:20:57 INFO run(LocalJobRunner.java:224) - Starting task: attempt_local2043574124_0001_m_000000_0
+2018-10-27 10:20:57 INFO isAvailable(ProcfsBasedProcessTree.java:181) - ProcfsBasedProcessTree currently is supported only on Linux.
+2018-10-27 10:20:57 INFO initialize(Task.java:587) -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@10ed5a3
+2018-10-27 10:20:57 INFO runNewMapper(MapTask.java:753) - Processing split: file:/E:/IdeaProjects/hadoopstudy/data/invertedIndexresults1/part-r-00000:0+144
+2018-10-27 10:20:58 INFO setEquator(MapTask.java:1202) - (EQUATOR) 0 kvi 26214396(104857584)
+2018-10-27 10:20:58 INFO init(MapTask.java:995) - mapreduce.task.io.sort.mb: 100
+2018-10-27 10:20:58 INFO init(MapTask.java:996) - soft limit at 83886080
+2018-10-27 10:20:58 INFO init(MapTask.java:997) - bufstart = 0; bufvoid = 104857600
+2018-10-27 10:20:58 INFO init(MapTask.java:998) - kvstart = 26214396; length = 6553600
+2018-10-27 10:20:58 INFO createSortingCollector(MapTask.java:402) - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-10-27 10:20:58 INFO statusUpdate(LocalJobRunner.java:591) - 
+2018-10-27 10:20:58 INFO flush(MapTask.java:1457) - Starting flush of map output
+2018-10-27 10:20:58 INFO flush(MapTask.java:1475) - Spilling map output
+2018-10-27 10:20:58 INFO flush(MapTask.java:1476) - bufstart = 0; bufend = 133; bufvoid = 104857600
+2018-10-27 10:20:58 INFO flush(MapTask.java:1478) - kvstart = 26214396(104857584); kvend = 26214356(104857424); length = 41/6553600
+2018-10-27 10:20:58 INFO sortAndSpill(MapTask.java:1660) - Finished spill 0
+2018-10-27 10:20:58 INFO done(Task.java:1001) - Task:attempt_local2043574124_0001_m_000000_0 is done. And is in the process of committing
+2018-10-27 10:20:58 INFO statusUpdate(LocalJobRunner.java:591) - map
+2018-10-27 10:20:58 INFO sendDone(Task.java:1121) - Task 'attempt_local2043574124_0001_m_000000_0' done.
+2018-10-27 10:20:58 INFO run(LocalJobRunner.java:249) - Finishing task: attempt_local2043574124_0001_m_000000_0
+2018-10-27 10:20:58 INFO runTasks(LocalJobRunner.java:456) - map task executor complete.
+2018-10-27 10:20:58 INFO runTasks(LocalJobRunner.java:448) - Waiting for reduce tasks
+2018-10-27 10:20:58 INFO run(LocalJobRunner.java:302) - Starting task: attempt_local2043574124_0001_r_000000_0
+2018-10-27 10:20:58 INFO isAvailable(ProcfsBasedProcessTree.java:181) - ProcfsBasedProcessTree currently is supported only on Linux.
+2018-10-27 10:20:58 INFO initialize(Task.java:587) -  Using ResourceCalculatorProcessTree : org.apache.hadoop.yarn.util.WindowsBasedProcessTree@5138a612
+2018-10-27 10:20:58 INFO run(ReduceTask.java:362) - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@5e21056d
+2018-10-27 10:20:58 INFO <init>(MergeManagerImpl.java:196) - MergerManager: memoryLimit=1320838784, maxSingleShuffleLimit=330209696, mergeThreshold=871753664, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2018-10-27 10:20:58 INFO run(EventFetcher.java:61) - attempt_local2043574124_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2018-10-27 10:20:58 INFO copyMapOutput(LocalFetcher.java:141) - localfetcher#1 about to shuffle output of map attempt_local2043574124_0001_m_000000_0 decomp: 157 len: 161 to MEMORY
+2018-10-27 10:20:58 INFO shuffle(InMemoryMapOutput.java:100) - Read 157 bytes from map-output for attempt_local2043574124_0001_m_000000_0
+2018-10-27 10:20:58 INFO closeInMemoryFile(MergeManagerImpl.java:314) - closeInMemoryFile -> map-output of size: 157, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->157
+2018-10-27 10:20:58 INFO run(EventFetcher.java:76) - EventFetcher is interrupted.. Returning
+2018-10-27 10:20:58 INFO statusUpdate(LocalJobRunner.java:591) - 1 / 1 copied.
+2018-10-27 10:20:58 INFO finalMerge(MergeManagerImpl.java:674) - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+2018-10-27 10:20:58 INFO merge(Merger.java:597) - Merging 1 sorted segments
+2018-10-27 10:20:58 INFO merge(Merger.java:696) - Down to the last merge-pass, with 1 segments left of total size: 152 bytes
+2018-10-27 10:20:58 INFO finalMerge(MergeManagerImpl.java:751) - Merged 1 segments, 157 bytes to disk to satisfy reduce memory limit
+2018-10-27 10:20:58 INFO finalMerge(MergeManagerImpl.java:781) - Merging 1 files, 161 bytes from disk
+2018-10-27 10:20:58 INFO finalMerge(MergeManagerImpl.java:796) - Merging 0 segments, 0 bytes from memory into reduce
+2018-10-27 10:20:58 INFO merge(Merger.java:597) - Merging 1 sorted segments
+2018-10-27 10:20:58 INFO merge(Merger.java:696) - Down to the last merge-pass, with 1 segments left of total size: 152 bytes
+2018-10-27 10:20:58 INFO statusUpdate(LocalJobRunner.java:591) - 1 / 1 copied.
+2018-10-27 10:20:58 INFO warnOnceIfDeprecated(Configuration.java:1049) - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2018-10-27 10:20:58 INFO done(Task.java:1001) - Task:attempt_local2043574124_0001_r_000000_0 is done. And is in the process of committing
+2018-10-27 10:20:58 INFO statusUpdate(LocalJobRunner.java:591) - 1 / 1 copied.
+2018-10-27 10:20:58 INFO commit(Task.java:1162) - Task attempt_local2043574124_0001_r_000000_0 is allowed to commit now
+2018-10-27 10:20:58 INFO commitTask(FileOutputCommitter.java:439) - Saved output of task 'attempt_local2043574124_0001_r_000000_0' to file:/E:/IdeaProjects/hadoopstudy/data/invertedIndexresults2/_temporary/0/task_local2043574124_0001_r_000000
+2018-10-27 10:20:58 INFO statusUpdate(LocalJobRunner.java:591) - reduce > reduce
+2018-10-27 10:20:58 INFO sendDone(Task.java:1121) - Task 'attempt_local2043574124_0001_r_000000_0' done.
+2018-10-27 10:20:58 INFO run(LocalJobRunner.java:325) - Finishing task: attempt_local2043574124_0001_r_000000_0
+2018-10-27 10:20:58 INFO runTasks(LocalJobRunner.java:456) - reduce task executor complete.
+2018-10-27 10:20:58 INFO monitorAndPrintJob(Job.java:1366) - Job job_local2043574124_0001 running in uber mode : false
+2018-10-27 10:20:58 INFO monitorAndPrintJob(Job.java:1373) -  map 100% reduce 100%
+2018-10-27 10:20:58 INFO monitorAndPrintJob(Job.java:1384) - Job job_local2043574124_0001 completed successfully
+2018-10-27 10:20:58 INFO monitorAndPrintJob(Job.java:1391) - Counters: 33
+	File System Counters
+		FILE: Number of bytes read=1446
+		FILE: Number of bytes written=501108
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=11
+		Map output records=11
+		Map output bytes=133
+		Map output materialized bytes=161
+		Input split bytes=327
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=6
+		Reduce shuffle bytes=161
+		Reduce input records=11
+		Reduce output records=6
+		Spilled Records=22
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=5
+		CPU time spent (ms)=0
+		Physical memory (bytes) snapshot=0
+		Virtual memory (bytes) snapshot=0
+		Total committed heap usage (bytes)=468713472
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=133
