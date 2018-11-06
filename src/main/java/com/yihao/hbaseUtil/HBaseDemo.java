@@ -24,6 +24,12 @@ public class HBaseDemo {
 		conf.set("hbase.zookeeper.property.clientPort","2181");
 
 	}
+
+
+
+
+
+
 	
 	/**
 	 * 判断表是否已存在
@@ -151,15 +157,15 @@ public class HBaseDemo {
 	public static void main(String[] args) {
 			try {
 				//System.out.println(isTableExist("student"));
-				createTable("person", "basic_info", "job", "heathy");
+				//createTable("person", "basic_info", "job", "heathy");
 //				dropTable("person");
-//				addRowData("person", "1001", "basic_info", "name", "Nick");
-//				addRowData("person", "1001", "basic_info", "sex", "Male");
+				//addRowData("person", "1001", "basic_info", "name", "Nick");
+				addRowData("person", "1001", "basic_info", "sex", "Male");
 //				addRowData("person", "1001", "basic_info", "age", "18");
 //				addRowData("person", "1001", "job", "dept_no", "7981");
 				
 //				deleteMultiRow("person", "person");
-//				getAllRows("person");
+				//getAllRows("person");
 				
 				
 			} catch (Exception e) {
